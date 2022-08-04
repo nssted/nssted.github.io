@@ -1,0 +1,223 @@
+@font-face {
+    font-family: manrope-bold;
+    src: url('../inc/fonts/bold.otf');
+}
+@font-face {
+    font-family: manrope-thin;
+    src: url('../inc/fonts/regular.otf');
+}
+@font-face {
+    font-family: mewyork;
+    src: url('../inc/fonts/newyork.otf');
+}
+html,body{
+    font-family: manrope-thin;    
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background:#000;
+}
+
+.form-landing-img-left{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    color: white;;
+    position: fixed;
+}
+
+.form-landing-img-left > img{
+    width: 80%;
+    height: 250px;
+    margin: calc(50vh - 125px) 50px;
+}
+
+.form-landing-img-right{
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    color: white;
+    width: 25vw;
+    position: fixed;
+
+}
+
+.form-landing-img-right > img{
+    width: 60%;
+    height: 300px;
+    margin: calc(50vh - 150px) 50px;
+}
+
+.form-landing{
+    height: 100vh;
+    color: white;
+    margin: 0 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+h2{
+    font-family: manrope-bold;
+    font-size: 4rem;
+    padding: 2%;
+    margin: 0;
+}
+h3{
+    font-family: manrope-bold;
+    font-size: 3rem;
+    padding: 2%;
+    margin: 0;
+}
+h4{
+    font-family: manrope-bold;
+    font-size: 2rem;
+    padding: 2%;
+    margin: 0;
+}
+
+.form-fields{
+    height: 70vh;
+    width: 100%;
+    padding-top: 5%;
+    margin: 0;
+}
+
+
+.form-fields i{
+    width: 40px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.input-wrap{
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    overflow: visible;
+    font-size: 1.2rem;
+    max-height: 40px;
+    padding: 10px;
+}
+
+input:focus{
+    transition: width 2s ease-in-out;
+    width: 100%;
+    outline: none;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+}
+input::placeholder{
+    font-size: 1.2rem;
+}
+
+
+.button{
+    margin: 20px;
+    width: 200px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    color: #000000;
+    background-color: #ff0000;
+    border-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.pt2{
+    display: block;
+}
+
+.flex-parent{
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (max-width:900px){
+    .form-landing-img-left{
+        display: none;
+    }
+
+    .form-landing-img-right{
+        display: none;
+    }
+
+    .form-landing{
+        height: 50vh;
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .form-fields{
+        width: 100%;
+    }
+    .flex-parent{
+        display: block;
+        width: 100%;
+    }
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.box select {
+    background-color: #2b010f;
+    color: white;
+    padding: 12px;
+    width: 350px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 8px 8px #00000033;
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 12%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 30px;
+}
+
+
