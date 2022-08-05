@@ -12,15 +12,14 @@ const firebaseConfig = {
 */
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDdCjHRlCOulFgWK6eSSqaTwfa1IYDNiqg",
-	authDomain: "ted-db.firebaseapp.com",
-	databaseURL: "https://ted-db-default-rtdb.firebaseio.com",
-	projectId: "ted-db",
-	storageBucket: "ted-db.appspot.com",
-	messagingSenderId: "404200934492",
-	appId: "1:404200934492:web:23f1df8a53df7eccd8ea99",
-	measurementId: "G-D2X31ZTMJW"
-  };
+  apiKey: "AIzaSyAuB8eQ8aCgCO8gfcfXLgbrANuX7LDPBqk",
+  authDomain: "ted-db-again.firebaseapp.com",
+  databaseURL: "https://ted-db-again-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "ted-db-again",
+  storageBucket: "ted-db-again.appspot.com",
+  messagingSenderId: "46948242956",
+  appId: "1:46948242956:web:07dbb9eb857dee77154029"
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
