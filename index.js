@@ -531,7 +531,7 @@ let toCheck = () => {
 		}else if(document.getElementById("quantity").value <= 10){
 
 			if(document.getElementById("Number_of_Teacher").value.length==10){
-				if(document.getElementById("Principle's_Name").value.length==9){
+				if(document.getElementById("Principle's_Name").value.length==12){
 						done=1;
 				}else{
 					alert("please enter a valid Transaction ID");
