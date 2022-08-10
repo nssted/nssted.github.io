@@ -149,6 +149,10 @@ input::placeholder{
 }
 
 @media screen and (max-width:900px){
+    .details{
+
+        display: none;
+    }
     .form-landing-img-left{
         display: none;
     }
