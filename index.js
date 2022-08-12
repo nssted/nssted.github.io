@@ -578,12 +578,12 @@ let BackToTeamNumberSelection = () =>{
 let calc = () => {
 
 if (document.getElementById("tier").value == "Premium"){
-	m = 1000
+	m = 500
 	cost = m*document.getElementById("quantity").value
 	document.getElementById("amount").innerHTML = "₹"+cost;
 
 }else if(document.getElementById("tier").value == "Regular"){	
-	m=500
+	m=300
 	cost = m*document.getElementById("quantity").value
 	document.getElementById("amount").innerHTML = "₹"+cost;
 }
