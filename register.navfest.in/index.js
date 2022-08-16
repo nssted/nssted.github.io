@@ -37,6 +37,7 @@ function EmailValidator(email){
 let checked = [];
 let current = 0;
 
+
 //on pressing the submit button
 document.getElementById("submit").onclick = () => {
 	toCheck();
@@ -575,16 +576,21 @@ let BackToTeamNumberSelection = () =>{
 	givenTeamNumber = false;
 }
 
+$(window).load(function()
+{
+    $('#myModal').modal('show');
+});
+	console.log("clicked")
 
 let calc = () => {
 
 if (document.getElementById("tier").value == "Premium"){
-	m = 1000
+	m = 500
 	cost = m*document.getElementById("quantity").value
 	document.getElementById("amount").innerHTML = "₹"+cost;
 
 }else if(document.getElementById("tier").value == "Regular"){	
-	m=500
+	m=300
 	cost = m*document.getElementById("quantity").value
 	document.getElementById("amount").innerHTML = "₹"+cost;
 }
