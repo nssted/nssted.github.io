@@ -4,7 +4,7 @@
 <!-- Mirrored from register.navfest.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Jul 2022 09:34:18 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2X31ZTMJW"></script>
 <script>
@@ -28,7 +28,31 @@
     <title>Registration Form</title>
 </head>
 <body>
-	
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content" style="background-color: rgb(25, 25, 25);">
+			<div class="modal-header">
+			  <h5 class="modal-title" style="color: #ff0000;"id="exampleModalLabel">Instructions</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body" style="color: white;">
+			  Registration process (we recommend you to use a laptop/pc)<br>
+			  <br>
+			  1) Enter your name, email address, and phone number<br>
+			  2) Select the type of ticket you wish to purchase, then select the number of tickets that you require<br>
+			  3) Scan the QR code to pay the amount mentioned. <br>
+			  (If using a smartphone, take a screenshot of the QR code and scan it through your UPI app)<br>
+			  4) Once paid, enter the transaction ID in the registration form and click "submit"<br>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" style="background-color: red;" data-dismiss="modal">Close</button>
+			  
+			</div>
+		  </div>
+		</div>
+	  </div>
     <div class="form-landing-img-left">
         
     </div>
@@ -71,7 +95,10 @@
 
 					<div class="input-wrap">
 						<input type="tel" name="" id="quantity" placeholder="Number of Tickets">
-						<label id="amount" style="color: #ff0000; font-family: manrope-thin; padding-left: 7px;">Amount</label>
+						<label id="amount" style="color: #ff0000; font-family: manrope-thin; margin-left: 0.5rem; margin-top: 0.5rem;">Amount</label>
+						<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+						<svg class="info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
+						</button>	
                     </div>
 					</div>
 					<img src="register.navfest.in/med/qr.png" style="width: 150px; height: 150px; padding-top: 14px;"alt="">
@@ -1013,6 +1040,9 @@
 	<script src="www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 	<script src="www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
 	<script src="index.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 <!-- Mirrored from register.navfest.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 29 Jul 2022 09:34:22 GMT -->

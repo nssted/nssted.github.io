@@ -347,7 +347,7 @@ document.getElementById("submit").onclick = () => {
 	newSchoolEntry.child("Name").set(document.getElementById("SchoolName").value);
 	newSchoolEntry.child("Tier").set(document.getElementById("tier").value);
 	newSchoolEntry.child("Quantity").set(document.getElementById("quantity").value);
-	alert("Registration Completed. Please check your mail for further details");
+	alert("You have been registered! Your ticket will be sent to you via email in 24 working hours!");
 
 	var request = new XMLHttpRequest();
     request.open("POST", "https://discord.com/api/webhooks/1004302842858836048/1jyvOCqSZzFh1kgqcZv2WPy4VJK0UJMx6786sQORoVPOi_lF-58GNDNxUC7F51MEOxnx");

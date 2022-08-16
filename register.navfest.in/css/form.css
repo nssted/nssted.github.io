@@ -225,3 +225,14 @@ input::placeholder{
 }
 
 
+.info{
+    fill: white;
+    width: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.info_button{
+    background: none;
+
+}
