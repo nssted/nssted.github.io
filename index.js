@@ -350,7 +350,7 @@ document.getElementById("submit").onclick = () => {
 	alert("You have been registered! Your ticket will be sent to you via email in 24 working hours!");
 
 	var request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/1004302842858836048/1jyvOCqSZzFh1kgqcZv2WPy4VJK0UJMx6786sQORoVPOi_lF-58GNDNxUC7F51MEOxnx");
+    request.open("POST", "https://discord.com/api/webhooks/1010231974151078028/hV6jctJslXlWmBXRDKeNj-v4KkkrZcEsdtHZxTXGRPHiPaBtFag_KGIJwmqurahJfTRk");
     request.setRequestHeader('Content-type', 'application/json');
 	var params = {
 		content: "Someone registered"
