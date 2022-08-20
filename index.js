@@ -350,10 +350,17 @@ document.getElementById("submit").onclick = () => {
 	alert("You have been registered! Your ticket will be sent to you via email in 24 working hours!");
 
 	var request = new XMLHttpRequest();
+	var allinfo = 
+   ["Name: " + document.getElementById("SchoolName").value,
+    'Email: ' + document.getElementById("School_Email").value,
+    'Phone Number: ' + document.getElementById("Number_of_Teacher").value,
+    'UPI ID: ' + document.getElementById("Principle's_Name").value,
+	'Quantity: ' + document.getElementById("quantity").value,
+	'Tier: ' + document.getElementById("tier").value].join('\n');
     request.open("POST", "https://discord.com/api/webhooks/1010231974151078028/hV6jctJslXlWmBXRDKeNj-v4KkkrZcEsdtHZxTXGRPHiPaBtFag_KGIJwmqurahJfTRk");
     request.setRequestHeader('Content-type', 'application/json');
 	var params = {
-		content: "Someone registered"
+		content: allinfo
 	}
 	request.send(JSON.stringify(params));
 	window.location.replace("https://tedxyouthnss.com/");
