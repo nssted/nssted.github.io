@@ -52,6 +52,7 @@ body{
     margin: calc(50vh - 150px) 50px;
 }
 
+
 .form-landing{
     height: 100vh;
     color: white;
@@ -149,6 +150,11 @@ input::placeholder{
 }
 
 @media screen and (max-width:900px){
+
+    .center{
+        position: absolute;
+        transform: translateY(70%)
+    }
     .details{
 
         display: none;
@@ -162,6 +168,12 @@ input::placeholder{
     }
 
     .form-landing{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
         height: 50vh;
         width: 100%;
         display: block;
@@ -184,7 +196,7 @@ input::placeholder{
     left: 50%;
     transform: translateX(-50%);
 }
-  
+
 .box select {
     background-color: #2b010f;
     color: white;
