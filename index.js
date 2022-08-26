@@ -541,7 +541,7 @@ let toCheck = () => {
 				if(document.getElementById("Principle's_Name").value.length==12){
 						done=1;
 				}else{
-					done=1;
+					alert("please enter a valid Transaction ID");
 				}
 			}else{
 				alert("Please enter a valid 10 digit number.");
